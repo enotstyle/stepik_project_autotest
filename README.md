@@ -1,1 +1,0 @@
-# stepik_project_autotest
