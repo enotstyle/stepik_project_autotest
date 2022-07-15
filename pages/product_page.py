@@ -10,7 +10,7 @@ class ProductPage(BasePage):
     def should_be_message_about_adding(self):
         book_name = self.browser.find_element(*ProductPageLocators.BOOK_NAME).text
         add_message = self.browser.find_element(*ProductPageLocators.ADD_MESSAGE).text
-        assert book_name in add_message, 'Not book name in the message'
+        assert book_name == add_message, 'Not book name in the message'
 
     def should_be_message_basket_total(self):
         book_price = self.browser.find_element(*ProductPageLocators.BOOK_PRICE).text
