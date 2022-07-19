@@ -13,3 +13,7 @@ class ProductPageLocators:
     ADD_MESSAGE = (By.CSS_SELECTOR, "div.alertinner > strong") #высплывающее сообщение о добавление с именем книги
     BOOK_PRICE = (By.CSS_SELECTOR, ".product_main p.price_color") #стоимость книги из карточки товара
     PRICE_MESSAGE = (By.CSS_SELECTOR, ".alert-info .alertinner strong") #всплывающее сообщение со стоимостью книги
+
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
